@@ -1,20 +1,36 @@
 <!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="style.css">
 <html>
 
 <head>
+
     <title>Ce mancam azi?</title>
 
 </head>
 
 <body>
-    <h1>
-        Alege masa:
-    </h1>
-    <div id=mealChosen>
-        <!-- Aici afisam masa-->
-
+    <div class="container">
+        <div id="date"></div>
+        <div id="display"></div>
+        <div id="content">
+            <p id="mealChosen">Mi-e foame!
+            </p>
+        </div>
     </div>
-    <button onclick="newBreakfast()">Mic Dejun</button>
+
+
+
+    <div id="b-nav">
+        <ul>
+            <button id="genBreakfast" onclick="newBreakfast()">Mic dejun</button>
+        </ul>
+        <ul>
+            <button id="genDinner" onclick="newDinner()">Masa de pranz</button>
+        </ul>
+        <ul>
+            <button id="genLunch" onclick="newLunch()">Cina</button>
+        </ul>
+    </div>
     <script src="javascript.js"></script>
 </body>
 
